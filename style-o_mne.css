@@ -80,6 +80,17 @@ li a{
   border: 3px solid white;
   margin: 15px;
   background: rgba(0,0,0,0.5);
+  display: inline-block;
+    background: rgba(0,0,0,0.6);
+    border: 3px solid white;
+    border-radius: 15px;
+    /*padding: 1em;*/
+    margin: 0 0 1.5em;
+    width: 100%;
+  -webkit-transition:1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 
