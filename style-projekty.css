@@ -52,6 +52,29 @@ h2{
 
 }
 
+.nwm{
+  font-family: black;
+  font-size: 20px;
+}
+
+ul{
+  list-style: none;
+  
+}
+li{
+  color: white;
+  display: inline-block;
+  width: 25%;
+  font-family: light;
+  min-width: 250px;
+  font-size: 20px;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}
+
 
 
 .masonry { /* Masonry container */
