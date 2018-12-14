@@ -1,0 +1,87 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: light;
+    src: url(Panton-LightCaps.otf);
+}
+@font-face {
+    font-family: black;
+    src: url(Panton-BlackCaps.otf);
+}
+
+
+/*------------MENU---------------------*/
+
+
+.menu{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+
+
+.menu a .menu-button{
+	min-width: 220px;
+	min-height: 220px;
+	
+	margin: 15px;
+	padding: 0;
+
+	display: inline-block;
+
+	transition: .3s;
+
+	border: 5px solid white;
+	border-radius: 15px;
+	background: transparent;
+	text-align: center;
+}
+
+.menu a{
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 220px;
+	font-family: black;
+	font-size: 25px; 
+	transition: .3s;
+}
+
+.menu a:hover .menu-button{
+	background: white;
+	color: #272727;
+}
+
+.background-image {
+  position: fixed;
+  left: -20px;
+  top: -20px;
+  right: 0;
+  z-index: 0;
+
+  display: block;
+  background-image: url('bg.jpg');
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100% + 40px);
+    overflow: hidden;
+
+
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
