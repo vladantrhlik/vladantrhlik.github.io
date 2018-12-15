@@ -92,6 +92,21 @@ li a{
     font-size: .85em;
 }
 
+.omne{
+	-webkit-column-count: 1;
+  -moz-column-count:1;
+  column-count: 1;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+   margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
 a{
 	text-decoration: none;
 	color: white;
@@ -140,6 +155,19 @@ a:hover{
         column-count: 2;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    ul{
+    	text-align: left;
+    	margin-left: 0;
+    	padding-left: 0;
+    	width: 100%;
+
+    }
+}
+
+
+
 /*
 @media only screen and (min-width: 769px) and (max-width: 1200px){
     .masonry {

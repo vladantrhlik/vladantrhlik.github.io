@@ -22,13 +22,15 @@ body{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
+
+	font-size: 0.85em;
 }
 
 
 
 .menu a .menu-button{
-	min-width: 220px;
-	min-height: 220px;
+	width: 220px;
+	height: 220px;
 	
 	margin: 15px;
 	padding: 0;
@@ -42,6 +44,9 @@ body{
 	background: transparent;
 	text-align: center;
 }
+
+
+
 
 .menu a{
 	text-transform: uppercase;
@@ -85,3 +90,12 @@ body{
   -ms-filter: blur(10px);
   filter: blur(10px);
 }
+
+/*
+@media only screen and (max-width: 480px) {
+    .menu a .menu-button{
+    	padding: 0;
+    	margin: 0;
+    	text-align: center;
+    }
+}*/
