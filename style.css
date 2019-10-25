@@ -1,0 +1,87 @@
+body{
+	background: #272727;
+}
+
+@media only screen and (max-device-width : 640px){
+	.box1 .bg img, .box2 .bg img, .box3 .bg img{
+		display: none;
+	}
+}
+
+
+
+.box1:hover{
+	flex: 2;
+}
+
+
+.box2:hover{
+	flex: 2;
+}
+
+.box3:hover{
+	flex: 2;
+}
+
+
+.box1:hover .bg img, .box2:hover .bg img, .box3:hover .bg img{	
+	opacity: 1;
+	border-radius: 5px;
+}
+
+
+
+.container{
+	display: flex;
+	position: absolute;
+	width: 80%;
+	max-width: 750px;
+	min-width: 200px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.box1, .box2, .box3{
+
+	color: white;
+	flex: 1;
+	text-align:center;
+	transition: .5s;
+	background-image: none;
+	overflow: hidden;
+	height: 500px;
+	width: 200px;
+
+}
+
+.box1 .icon img, .box2 .icon img, .box3 .icon img{
+	width: 100px;
+	background: transparent;
+	padding: 15px;
+	transition: .5s;
+	filter: invert(85%);
+}
+
+.box1 .bg img, .box2 .bg img, .box3 .bg img{
+	width: 100%;
+	transform: translateY(-100%);
+	background: transparent;
+	z-index: -69;	
+	opacity: 0;
+	transition: .5s;
+}
+
+
+
+
+.box1:hover .icon img, .box2:hover .icon img, .box3:hover .icon img{	
+	filter: invert(100%);
+	z-index: 1566;
+}
+
+
+
+

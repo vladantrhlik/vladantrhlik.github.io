@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Vladan Trhlík - Arduino</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style-projekty.css">
-
-	<script src="masonry-docs.min"></script>
-	
-	
-	<title>Projekty</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
 </head>
 <body>
-	<div class="background-image"></div>
-	<h1>Projekty</h1>
+	
+	
 
-	<!--<hr>-->
-	<div class="masonry">
+	<div class="articles">
 
-	<div class="item">
-		<h2>Spolupráce s robici.cz</h2>
-		<p>
-			Momentálně spolupracuji na projektu BlocklyBot s Matějem Suchánkem z <strong><a href="http://www.robici.cz/">http://www.robici.cz/</a></strong>. 
-		</p>
-		<img src="fotky/blocklybot (1).jpg">
+		<h1>Projekty</h1>
+
+
+	<div class="navbar">
 		
+	<ul id="menu">
+	</ul>
+
+
 	</div>
 
-	<div class="item">
-		<h2>1D pong</h2>
+	<div class="article">
+		<h2 id="pong">1D pong</h2>
 		<p>
 			Tento projekt jsem vytvořil asi za dva dny po zhlédnutí <strong><a href="https://www.youtube.com/watch?v=liZMwInWuTM" target="_blank">tohoto</a></strong> videa. Je v tom asi 30 adresovatelných LEDek WS2812B, z čehož je jich 8 použito na ukazování skóre (v binární soustavě pro ušetření místa). Zbylých 22 slouží jako hlavní panel. Pak už jsou tam jen dvě tlačítka k ovládání a samozřejmě Arduino, v tomto případě Arduino Pro Mini.
 		</p>
+		<div class="galerie">
 		<img src="fotky/2dpong (4).jpg">
 		<img src="fotky/2dpong (1).jpg">
+		</div>
 		
 	</div>
-	<div class="item">
-		<h2>40% mechanicaká klávesnice</h2>
+
+	<div class="article">
+		<h2 id="kb1">40% mechanicaká klávesnice</h2>
 		<p>
 			Tento projekt je zatím jen v přípravné fázi. PCB kterou jsem našel <strong><a href="http://www.40percent.club/2018/10/nori.html" target="_blank">zde</a></strong> objednám z JLCPCB. Vše to bude řídit Arduino Pro Micro, které může fungovat jako USB zažízení (klávesnice,myš). Také jsem zjistil, že vybírání mechanických spínačů je docela věda. Zde je seznam všech věcí:
 		</p>
@@ -55,37 +52,76 @@
 		</ul>
 		
 	</div>
-	<div class="item">
-		<h2>Autíčko  XD</h2>
-		<p>
-			Toto autíčko byl snad můj úplně první projekt a taky na to trochu vypadá XD. Podvozek (s motory) jsem objednal z Aliexpressu stejně jako všechno ostatní. V originálním podvozku umožňoval zatáčení malý motůrek, který jsem vyměnil za 9g servo. Vzadu je H-můstek, díky kterému jde ovládat motory pomocí Arduina. Na autíčku je Arduino UNO což asi nebyla nejvhodnější volba, ale v té době jsem měl trochu méně zkušeností než teď.
-		</p>
-		<img src="fotky/auto (3).jpg">
-		
-	</div>
-	<div class="item">
-		<h2>MACROPAD</h2>
+
+
+	<div class="article">
+		<h2 id="macropad">MACROPAD</h2>
 		<p>Tato malá mechanická klávesnice (macropad) je můj momentálně poslední projekt. Rozhodl jsem se ho vytvořit také kvůli tomu, že plánuji postavit mechanickou klávesnici (buď 40% nebo 60%). Desku na tento macropad jsem našel <strong><a href="https://easyeda.com/ai03/Cloud_Nine-80f8a3b410e741659e7ae8e9e1bbaf89" target="_blank">zde</a></strong> a objednal z Čínské firmy JLCPCB asi za $7, což je super cena. Mechanické spínače, klávesy a Arduino Pro Micro jsou z Aliexpressu. Celé to tedy řídí Pro Micro s mikročipem Atmega32U4, který může fungovat jako USB zařízení (myš, klávesnice), takže díky němu může klávesnice "psát" různé klávesové zkratky. Momentálně to používám k ovládání SoundCloudu :). Plánuji ještě dodělat nějakou krabičku, vespod které bude několik WS2812B LEDek s různými efekty.</p>
+		<div class="galerie">
 		<img src="fotky/cloud9 (15).jpg">
 		<img src="fotky/cloud9 (12).jpg">
 		<img src="fotky/cloud9 (9).jpg">
-		
+		</div>
 		
 	</div>
 
-	<div class="item">
-			<h2>TV-B-GONE</h2>
+	<div class="article">
+			<h2 id="tvbgone">TV-B-GONE</h2>
 			<p>
 				TV-B-GONE je takový univerzální vypínač televizí. Po stisknutí tlačítka vysílá IR ledka signály/kódy všech značek k vypnutí televize. Všechno to řídí Arduino pro mini a je to napájeno třemi 1.5V bateriemi. Opravdu to funguje, zkoušel jsem to doma a také v elektru XD.
 			</p>
+			<div class="galerie">
 			<img src="fotky/tvbgone (6).jpg">
+			</div>
+	</div>
 
+	<div class="article">
+		<h2 id="auticko">Arduino autíčko :)</h2>
+		<p>
+			Toto autíčko byl snad můj úplně první projekt a taky na to trochu vypadá xD. Podvozek (s motory) jsem objednal z Aliexpressu stejně jako všechno ostatní. V originálním podvozku umožňoval zatáčení malý motůrek, který jsem vyměnil za 9g servo. Vzadu je H-můstek, díky kterému jde ovládat motory pomocí Arduina. Na autíčku je Arduino UNO což asi nebyla nejvhodnější volba, ale v té době jsem měl trochu méně zkušeností než teď.
+		</p>
+		<div class="galerie">
+		<img src="fotky/auto (3).jpg">
+		</div>
 	</div>
 
 
+
 	</div>
-	
-		
+	</div>
 
 </body>
 </html>
+
+<script>
+	
+var articles = document.getElementsByTagName("h2");
+var hideshow = [];
+
+var ul = document.getElementById("menu");
+
+for (i=0; i<articles.length; i++) {
+	hideshow[i] = false;
+}
+
+console.log(hideshow);
+
+for (i=0; i<articles.length; i++) {
+    var nadpis = articles[i];
+    var idcko = nadpis.id;
+
+    console.log(nadpis.innerHTML);
+    console.log(idcko);
+
+    var li = document.createElement("li");
+
+    var a = document.createElement('a');
+	var linkText = document.createTextNode(nadpis.innerHTML);
+	a.appendChild(linkText);
+	a.title = nadpis.innerHTML;
+	a.href = "#" + idcko;
+	ul.appendChild(li);
+  	li.appendChild(a);
+}
+
+</script>
